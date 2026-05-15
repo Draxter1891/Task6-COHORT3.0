@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+main #sec1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(236, 255, 254);
+}
+main #sec1 header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+main #sec1 header .left-hdr {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 70px;
+}
+main #sec1 header .left-hdr img {
+  width: 15%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #sec1 header .left-hdr nav {
+  height: 100%;
+  width: 80%;
+}
+main #sec1 header .left-hdr nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main #sec1 header .left-hdr nav ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  font-weight: 600;
+}
+main #sec1 header .right-hdr {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+main #sec1 header .right-hdr button {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #111;
+  color: white;
+  font-weight: 700;
+}
+main #sec1 header .right-hdr button:nth-child(1) {
+  background-color: transparent;
+}
+main #sec1 .hero {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+main #sec1 .hero h1 {
+  width: 40%;
+  font-size: 65px;
+  font-family: serif;
+  font-weight: 400;
+  text-align: center;
+}
+main #sec1 .hero p {
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+}
+main #sec1 .hero .search {
+  background-color: #acaaaa;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 60px;
+  border-radius: 30px;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+main #sec1 .hero .search input {
+  width: 100%;
+  height: 100%;
+  background-color: #acaaaa;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 15px;
+}
+main #sec1 .hero .search .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  right: 5%;
+  background-color: #f10962;
+}
+main #sec1 .hero .search p {
+  position: absolute;
+  color: #111;
+  right: 15%;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+}
+main #sec1 .hero .search p i {
+  font-size: 20px;
+  font-weight: 100;
+}
+main #sec1 .hero .trending-searches {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main #sec1 .hero .trending-searches p {
+  background-color: #d4d2d2;
+  color: #111;
+  height: 30px;
+  padding: 0 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+main #sec1 .hero .trending-searches p:nth-child(1) {
+  background-color: transparent;
+  color: #acaaaa;
+}
+main #sec1 .hero .trending-searches p:not(:first-child):hover {
+  background-color: transparent;
+  border: 2px solid gray;
+  color: white;
+}
+main #sec2 {
+  height: 100%;
+  width: 100%;
+  color: rgb(236, 255, 254);
+}
+main #sec2 header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+main #sec2 header button {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: rgb(44, 44, 44);
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15%;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  border: 2px solid transparent;
+}
+main #sec2 header button:hover {
+  background: rgba(117, 117, 117, 0.35);
+  color: white;
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.151);
+  box-shadow: 0 0 32px rgba(255, 255, 255, 0.35);
+}
+main #sec2 header nav {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main #sec2 header nav p {
+  font-size: 15px;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 5px 7px;
+  transition: background-color 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #sec2 header nav p:hover {
+  background-color: rgba(231, 220, 243, 0.315);
+}
+main #sec2 header nav p:first-child {
+  background-color: rgba(231, 220, 243, 0.315);
+}
+main #sec2 .hero-sec2 {
+  height: 150%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "one two three four" "five six seven eight" "nine ten eleven twelve";
+  padding: 40px 60px;
+  gap: 30px;
+}
+main #sec2 .hero-sec2 .one {
+  grid-area: one;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .two {
+  grid-area: two;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .three {
+  grid-area: three;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .four {
+  grid-area: four;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .five {
+  grid-area: five;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .six {
+  grid-area: six;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .seven {
+  grid-area: seven;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .eight {
+  grid-area: eight;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .nine {
+  grid-area: nine;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .ten {
+  grid-area: ten;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .eleven {
+  grid-area: eleven;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 .twelve {
+  grid-area: twelve;
+  border-radius: 20px;
+}
+main #sec2 .hero-sec2 div .img-cont {
+  height: 85%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 20px;
+  overflow: hidden;
+}
+main #sec2 .hero-sec2 div .info {
+  width: 100%;
+  height: 15%;
+  background-color: #00d2d3;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+main #sec2 .hero-sec2 div .info .left-info {
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding: 0 4px;
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  position: relative;
+}
+main #sec2 .hero-sec2 div .info .left-info .pfp {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ee5253;
+  overflow: hidden;
+  position: absolute;
+  left: 10px;
+}
+main #sec2 .hero-sec2 div .info .left-info h4 {
+  font-size: 13px;
+}
+main #sec2 .hero-sec2 div .info .left-info .tag {
+  background-color: gray;
+  width: 50px;
+  align-content: center;
+  text-align: center;
+  padding: 2px 3px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+main #sec2 .hero-sec2 div .info .right-info {
+  width: 50%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(146, 30, 49);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding: 0 4px;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
